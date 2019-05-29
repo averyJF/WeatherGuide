@@ -35,14 +35,5 @@ App({
   },
   globalData: {
     userInfo: null
-  },
-  onShow: function(options) {
-    console.log(options,'options');
-  },
-  onHide: function() {
-    console.log(9999,'hide');
-  },
-  onError: function(msg) {
-    console.log(msg,'msg');
   }
 })

@@ -9,12 +9,5 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <button type="default" size="defaultSize" plain="plain" bindtap="clickMe" hover-class="defaultTap">Button</button>
-  </view>
-  <view>
-    <image bindtap="bindViewTap" src="{{routeurl[0]}}" mode="cover"></image>
-  </view>
-  <view>
-    <image bindtap="bindViewTap" src="{{routeurl[1]}}" mode="cover"></image>
   </view>
 </view>

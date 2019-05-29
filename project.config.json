@@ -4,18 +4,18 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
-		"checkInvalidKey": true
+		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.6",
-	"appid": "wxc4b38128beeae378",
-	"projectname": "xm",
+	"libVersion": "2.7.0",
+	"appid": "wx5e9034dc8bbe9488",
+	"projectname": "zgWeather",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

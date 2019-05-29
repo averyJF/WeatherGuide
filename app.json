@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/explotone/explotone",
+    "pages/bar/index",
+    "pages/swip/index"
+  ],
+  "tabBar": {
+    "list": [
+      { "text": "Tab1", "pagePath": "pages/bar/index" },
+      { "text": "Tab1", "pagePath": "pages/bar/index" }
+    ]
+  },
+  "window": {
+    "networkTimeout": {
+      "request": 3000
+    },
+    "pageOrientation": "auto",
+    "onReachBottomDistance": 100,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "KFVideo",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

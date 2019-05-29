@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="userinfos">
+   <text bindtap="onTap">我是模板</text>
+</view>

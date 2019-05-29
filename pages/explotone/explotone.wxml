@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   <import src="../components/common/temp1.wxml"/>
+   <template name="odd">
+    <view> odd </view>
+  </template>
+  <template name="even">
+    <view> even </view>
+  </template>
+  <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:key="index">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+  </block>
+  <view class="ay-rpx">
+    <template is="temp1"></template>
+  </view>
+ 
+  <view>
+    <include src="../components/common/include.wxml"/>
+  </view>
+  <view>
+    <button type="default" size="defaultSize" plain="plain" bindtap="clickMe" hover-class="defaultTap">{{motto}}</button>
+  </view>
+  <view>
+    <button bindtap="request">请求</button>
+  </view>
+  <view>
+    <button touchstart = "touchstartay">触碰</button>
+  </view>
+    <component-tag-name inner-text="Some text" class="page-component" bind:myevent="onMyEvent">
+    
+   </component-tag-name>
+  </view>
+  <view>
+    <button bindtap="swiper">swiper</button>
+  </view>
+</view>

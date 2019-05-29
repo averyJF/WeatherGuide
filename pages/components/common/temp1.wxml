@@ -1,0 +1,3 @@
+<template name="temp1">
+    <view> 我是导进来的模板 </view>
+</template>

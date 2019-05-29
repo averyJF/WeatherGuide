@@ -1,14 +1,30 @@
 {
   "pages": [
-    "pages/hello/hello",
     "pages/index/index",
+    "pages/hello/hello",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "昌军天气小向导",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home/Icon_home@2x.png",
+        "selectedIconPath": "/images/home/Icon_homeselect@2x.png"
+      },
+      {
+        "pagePath": "pages/hello/hello",
+        "text": "我的",
+        "iconPath": "/images/home/Icon_user@2x.png",
+        "selectedIconPath": "/images/home/Icon_userselect@2x.png"
+      }
+    ]
+  }
 }

@@ -1,13 +1,33 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="home-header">
+     <!-- 头部 -->
+    <view class="header-search">
+      <view class="search-left">
+        <image src='https://image.longfor.com/xcximg/images/home/Icon_search@2x.png'></image>
+      </view>
+      <view class='search-right'>
+      <!-- bindtap='bindToSearch' -->
+        <view class="search-box">查找意向城市天气</view>
+      </view>
+    </view>
+    <!-- bindtap='bindSwitchCity' -->
+    <view class="header-address">
+      <view class="address-icon">
+        <image src="https://image.longfor.com/xcximg/images/home/Icon_location@2x.png"></image>
+      </view>
+      <view class="address-city">全国</view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 轮播图 -->
+  <view class="banner">
+      <swiper class="swip" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:key="index" wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+          </swiper-item>
+        </block>
+     </swiper>
   </view>
 </view>

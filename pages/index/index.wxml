@@ -16,18 +16,103 @@
       <view class="address-icon">
         <image src="https://image.longfor.com/xcximg/images/home/Icon_location@2x.png"></image>
       </view>
-      <view class="address-city">全国</view>
+      <view class="address-city">{{addressComponent.city+addressComponent.district}}</view>
     </view>
   </view>
   <!-- 轮播图 -->
-  <view class="banner">
-      <swiper class="swip" indicator-dots="{{indicatorDots}}"
-            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:key="index" wx:for="{{imgUrls}}">
-          <swiper-item>
-            <image src="{{item}}" class="slide-image" width="355" height="150"/>
-          </swiper-item>
-        </block>
-     </swiper>
+  <!--<view class="banner">-->
+      <!--<swiper class="swip" indicator-dots="{{indicatorDots}}"-->
+            <!--autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">-->
+        <!--<block wx:key="index" wx:for="{{imgUrls}}">-->
+          <!--<swiper-item>-->
+            <!--<image src="{{item}}" class="slide-image" width="355" height="150"/>-->
+          <!--</swiper-item>-->
+        <!--</block>-->
+     <!--</swiper>-->
+  <!--</view>-->
+  <!--主体-->
+  <view class="ay-content">
+    <view class="tit">
+      28°
+    </view>
+    <view class="con-a">
+      <text class="af">阴</text>
+      <view class="bf">|</view>
+      <text class="cf">41优</text>
+    </view>
+    <view class="info-b">
+      <view class="fo">
+        <icon type="info" size="10" color='#666'/>
+        <view class="b">2级</view>
+      </view>
+      <view class="fo">
+        <icon type="info" size="10" color='#666'/>
+        <view class="b">23%</view>
+      </view>
+      <view class="fo">
+        <icon type="info" size="10" color='#666'/>
+        <view class="b">1000hpa</view>
+      </view>
+    </view>
+    <!--今天明天板块-->
+    <view class="tadmodule">
+      <view class="tad">
+        <view class="tad-a">
+          <view class="a-a">
+            今天
+            <view class="a-y">优</view>
+          </view>
+          <text>多云转晴</text>
+        </view>
+        <view class="tad-a">
+          <view class="a-a">
+            30/14℃
+          </view>
+          <icon type="info" size="10" color='#49a9ee'/>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="tad">
+        <view class="tad-a">
+          <view class="a-a">
+            明天
+            <view class="a-y">良</view>
+          </view>
+          <text>多云转阴</text>
+        </view>
+        <view class="tad-a">
+          <view class="a-a">
+            30/14℃
+          </view>
+          <icon type="info" size="10" color='#49a9ee'/>
+        </view>
+      </view>
+    </view>
+    <!-- 生活指数 -->
+    <view class="ayexponent">
+      <view class="ent-a">生活指数</view>
+      <view class="ent-b">
+        <view class="list">
+          <icon type="info" size="20"></icon>
+          <text  class="list-b">四月三十</text>
+          <text class="list-c">万年历</text>
+        </view>
+        <view class="list">
+          <icon type="info" size="20"></icon>
+          <text  class="list-b">四月三十</text>
+          <text class="list-c">万年历</text>
+        </view>
+        <view class="list">
+          <icon type="info" size="20"></icon>
+          <text  class="list-b">四月三十</text>
+          <text class="list-c">万年历</text>
+        </view>
+        <view class="list">
+          <icon type="info" size="20"></icon>
+          <text  class="list-b">四月三十</text>
+          <text class="list-c">万年历</text>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

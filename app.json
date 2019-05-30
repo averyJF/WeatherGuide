@@ -2,12 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/hello/hello",
+    "pages/weather/future/future",
+    "pages/weather/life/life",
+    "pages/weather/picture/picture",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "昌军天气小向导",
+    "navigationBarTitleText": "天气小向导",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
@@ -15,16 +18,33 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "今天",
         "iconPath": "/images/home/Icon_home@2x.png",
         "selectedIconPath": "/images/home/Icon_homeselect@2x.png"
       },
       {
-        "pagePath": "pages/hello/hello",
-        "text": "我的",
+        "pagePath": "pages/weather/future/future",
+        "text": "未来",
+        "iconPath": "/images/home/Icon_user@2x.png",
+        "selectedIconPath": "/images/home/Icon_userselect@2x.png"
+      },
+      {
+        "pagePath": "pages/weather/life/life",
+        "text": "生活指数",
+        "iconPath": "/images/home/Icon_user@2x.png",
+        "selectedIconPath": "/images/home/Icon_userselect@2x.png"
+      },
+      {
+        "pagePath": "pages/weather/picture/picture",
+        "text": "气象图",
         "iconPath": "/images/home/Icon_user@2x.png",
         "selectedIconPath": "/images/home/Icon_userselect@2x.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

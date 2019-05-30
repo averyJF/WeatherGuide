@@ -17,7 +17,7 @@
 }
 
 .header-search {
-  width: 508rpx;
+  width: 380rpx;
   height: 64rpx;
   background: #f5f5f5;
   border-radius: 100rpx;
@@ -57,7 +57,7 @@
 }
 
 .header-address {
-  width: 150rpx;
+  width: 278rpx;
   background: #f5f5f5;
   border-radius: 100rpx;
   margin-left: 20rpx;
@@ -80,7 +80,7 @@
 }
 
 .address-city {
-  max-width: 75rpx;
+  max-width: 300rpx;
   font-size: 26rpx;
   margin-left: 14rpx;
   overflow: hidden;
@@ -92,4 +92,115 @@
     width:100%;
     box-sizing:border-box;
     padding: 0 20rpx;
+}
+/* 主体 */
+.ay-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, .9)
+}
+.ay-content .tit{
+  font-size: 120rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.ay-content .con-a{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.ay-content .con-a .af{
+  font-size: 16px;
+  line-height: 28px;
+}
+.ay-content .con-a .bf{
+  margin:0 20rpx;
+}
+.ay-content .con-a .cf{
+  text-align: center;
+  width: 120rpx;
+  background-color: #49a9ee;
+  border-radius: 5rpx;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+}
+.info-b{
+  display: flex;
+  justify-content: center;
+  color: #666;
+  font-size: 12px;
+  margin: 20rpx 0 80rpx;
+}
+.info-b .fo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-b .b{
+  width: 100rpx;
+  padding-left: 5rpx;
+}
+/*今明两天板块*/
+.tadmodule{
+  clear: both;
+  display: flex;
+  /* height:200rpx; */
+}
+.tadmodule .tad{
+  width: 49%;
+}
+.tadmodule  .line{
+  flex: 1;
+  border-right: 1px solid #eee;
+}
+.tad-a{
+  display: flex;
+  flex-direction: column;
+}
+.tad-a .a-a{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.tad{
+  padding:20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.tad-a .a-a .a-y{
+  padding:0 30rpx;
+  background-color: #49a9ee;
+  border-radius: 5rpx;
+  color: #fff;
+  margin-left:10rpx;
+}
+/* 生活指数 */
+.ayexponent{
+  margin:40rpx 10rpx;
+}
+.ayexponent .ent-a{
+  border-bottom: 1px solid #eee;
+  color: #666;
+  font-size: 16px;
+  padding-bottom: 10rpx;
+}
+.ayexponent .ent-b{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ayexponent .ent-b .list{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.ayexponent .ent-b .list .list-b{
+  font-size: 12px;
+  margin:10rpx 0;
+}
+.ayexponent .ent-b .list .list-c{
+  font-size: 10px;
 }

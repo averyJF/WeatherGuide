@@ -1,0 +1,10 @@
+.button-style{
+  display: flex;
+  flex-direction: row;
+  text-align: center;  
+}
+
+.srcImage{
+  width: 100%;
+  
+}

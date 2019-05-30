@@ -1,0 +1,19 @@
+<view style='height:50rpx'>
+</view>
+<view class='button-style'>
+  <button size='50rpx' bindtap='onPTap' data-pic='{{p24Pic}}' data-title='{{p24Title}}'>
+    {{p24Title}}
+  </button>
+  <button size='50rpx' bindtap='onPTap' data-pic='{{p48Pic}}' data-title='{{p48Title}}'>
+    {{p48Title}}
+  </button>
+  <button size='50rpx' bindtap='onPTap' data-pic='{{p72Pic}}' data-title='{{p72Title}}'>
+    {{p72Title}}
+  </button>
+</view>
+<view style='height:50rpx'></view>
+<view >
+  <image class='srcImage' src='{{p24Pic}}' wx:if='{{p24OnShow}}'></image>
+  <image class='srcImage' src='{{p48Pic}}' wx:if='{{p48OnShow}}'></image>
+  <image class='srcImage' src='{{p72Pic}}' wx:if='{{p72OnShow}}'></image>
+</view>

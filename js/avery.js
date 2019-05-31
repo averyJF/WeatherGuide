@@ -38,14 +38,31 @@ function showSettingToast(e) {
   })
 };
 
-function getWeatherNow( city,cityCode ,latitude, longitude){
-    wx.request({
-      url: constant.currentWeatherByCityId + cityCode,
-      success:function(data){
-        wx.setStorageSync('weatherNow', data.data);
-        console.log(JSON.stringify(data.data))
-      }
+let getImgInfo = (config) => {
+    return new Promise((resolve,reject) => {
+        wx.getImageInfo({
+        src: config.src,
+        success:(res)=>{
+        config.src = res.path
+    resolve(config)
+},
+    fail:()=>{
+
+    }
+})
+})
+}
+let getWeatherNow = ( city,cityCode ,latitude, longitude)=>{
+    return new Promise((resolve,reject) => {
+        wx.request({
+        url: constant.currentWeatherByCityId + cityCode,
+        success:function(data){
+            wx.setStorageSync('weatherNow', data.data);
+            resolve(city,cityCode ,latitude, longitude)
+            console.log(JSON.stringify(data.data))
+        }
     })
+})
 };
 
 module.exports = {
@@ -54,6 +71,6 @@ module.exports = {
   //获取天气信息接口
   checkPositionAuthorization: checkPositionAuthorization,
   //获取今天天气信息
-  getWeatherNow: getWeatherNow
+    getWeatherNow
   
 }

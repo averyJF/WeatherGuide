@@ -86,7 +86,10 @@ Page({
             wx.setStorageSync('cityInfo', cityInfo);
             wx.setStorageSync('latitude', latitude);
             wx.setStorageSync('longitude', longitude);
-            avery.getWeatherNow('北京市', cityCode,'342','423423');
+            Promise.all([avery.getWeatherNow('北京市', cityCode,'342','423423')])
+                .then((res) =>{
+                console.log(wx.getStorageSync("weatherNow"),'sync')
+            })
             //console.log(JSON.stringify(that.data.addressComponent));
           },
           fial(res) {

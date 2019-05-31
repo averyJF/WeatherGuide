@@ -52,13 +52,25 @@ let getImgInfo = (config) => {
 })
 })
 }
-let getWeatherNow = ( city,cityCode ,latitude, longitude)=>{
+// let getWeatherNow = ( city,cityCode ,latitude, longitude)=>{
+//     return new Promise((resolve,reject) => {
+//         wx.request({
+//         url: constant.currentWeatherByCityId + cityCode,
+//         success:function(data){
+//             wx.setStorageSync('weatherNow', data.data);
+//             resolve(city,cityCode ,latitude, longitude)
+//             console.log(JSON.stringify(data.data))
+//         }
+//     })
+// })
+// };
+let getWeatherNow = (config)=>{
     return new Promise((resolve,reject) => {
         wx.request({
-        url: constant.currentWeatherByCityId + cityCode,
+        url: constant.currentWeatherByCityId + config.cityCode,
         success:function(data){
             wx.setStorageSync('weatherNow', data.data);
-            resolve(city,cityCode ,latitude, longitude)
+            resolve(config)
             console.log(JSON.stringify(data.data))
         }
     })

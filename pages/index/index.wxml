@@ -32,26 +32,56 @@
   <!--</view>-->
   <!--主体-->
   <view class="ay-content">
+
+    <view>{{weatherNow.date}}/{{weatherNow.week}}</view>
     <view class="tit">
-      28°
+      {{weatherNow.tem}}°
     </view>
     <view class="con-a">
-      <text class="af">阴</text>
+      <text class="af">{{weatherNow.wea}}</text>
       <view class="bf">|</view>
-      <text class="cf">41优</text>
+      <text class="cf">{{weatherNow.air}} {{weatherNow.air_level}}</text>
     </view>
     <view class="info-b">
       <view class="fo">
-        <icon type="info" size="10" color='#666'/>
-        <view class="b">2级</view>
+        风力:
+        <view class="b">{{weatherNow.win_speed}}</view>
       </view>
       <view class="fo">
-        <icon type="info" size="10" color='#666'/>
-        <view class="b">23%</view>
+        风速:
+        <view class="b">{{weatherNow.win_meter}}</view>
       </view>
       <view class="fo">
-        <icon type="info" size="10" color='#666'/>
-        <view class="b">1000hpa</view>
+        湿度:
+        <view class="b">{{weatherNow.humidity}}</view>
+      </view>
+      <view class="fo">
+        气压:
+        <view class="b">{{weatherNow.pressure}}hpa</view>
+      </view>
+      <view class="fo">
+        PM2.5:
+        <view class="b">{{weatherNow.air_pm25}}</view>
+      </view>
+      <view class="fo">
+        更新时间:
+        <view class="b">{{weatherNow.update_time}}</view>
+      </view>
+      <view class="fo">
+        能见度:
+        <view class="b">{{weatherNow.visibility}}</view>
+      </view>
+      <view class="fo">
+        风向:
+        <view class="b">{{weatherNow.win}}</view>
+      </view>
+      <view class="fo">
+        空气质量描述:
+        <view class="b">{{weatherNow.air_tips}}</view>
+      </view>
+      <view class="fo">
+        预警信息:
+        <view class="b">{{weatherNow.alarm}}</view>
       </view>
     </view>
     <!--今天明天板块-->

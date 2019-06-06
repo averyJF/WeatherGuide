@@ -12,10 +12,9 @@ module.exports = {
   'futureWeatherByCityId': 'https://www.tianqiapi.com/api/?version=v1&cityid=',
   //获取当前气象图信息、
   'weatherMap':'https://www.tianqiapi.com/api/?version=v8',
-
   //根据城市id获取天气信息接口
   'weatherInter':"https://www.tianqiapi.com/api/?version=v1&cityid=",
-  //根据城市名称获取天气信息接口
-  //获取全国降水图
+  //获取万年历接口
+  'calendar':'https://www.sojson.com/open/api/lunar/json.shtml?date='
 
 }
